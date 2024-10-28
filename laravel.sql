@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: localhost
--- Üretim Zamanı: 28 Eki 2024, 20:54:37
+-- Üretim Zamanı: 28 Eki 2024, 21:46:51
 -- Sunucu sürümü: 10.4.28-MariaDB
 -- PHP Sürümü: 8.2.4
 
@@ -79,13 +79,6 @@ CREATE TABLE `information` (
   `mail` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Tablo döküm verisi `information`
---
-
-INSERT INTO `information` (`id`, `admin_id`, `tel_number1`, `tel_number2`, `address`, `mail`) VALUES
-(13, 1, '12', '12', '122', 'avdkflvlkfv@gmail.com');
-
 -- --------------------------------------------------------
 
 --
@@ -126,8 +119,9 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
+('37mER23vT1t7pQJ5oAnGvzoCl3fbp79bhsDhxYBO', NULL, '127.0.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/601.2.4 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.4 facebookexternalhit/1.1 Facebot Twitterbot/1.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiaHZJdjBWekVzZjZSRmhFd0xXZ2VyODJHa1dEVzFJY3k2QThDcTJBNyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzI6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hZG1pbl9ob21lIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1730146272),
 ('iUGwwWAPLmyHVZpKyKE1hHIQb4DWvEowPLvmOPZ6', NULL, '127.0.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0.1 Safari/605.1.15', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiM0xkb1p2WVZUclVaaHF0WFlyaDIwN1RJUVJDbWMyY2x2R1VZUHBmVCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDA6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMS9wcm9wZXJ0eS1zaW5nbGUvMjAiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1730144694),
-('KvXpP0tzZeurDyPukBlTmpobC6ZWdLgHSRtmyNoM', NULL, '127.0.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0.1 Safari/605.1.15', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiRTlvcVdpalQ0cUVJMlN2ZlFQa2phbnJxOWVWTmNSNUdWNXVyaUtUSSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzI6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hZG1pbl9ob21lIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1730145046),
+('KvXpP0tzZeurDyPukBlTmpobC6ZWdLgHSRtmyNoM', NULL, '127.0.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0.1 Safari/605.1.15', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiRTlvcVdpalQ0cUVJMlN2ZlFQa2phbnJxOWVWTmNSNUdWNXVyaUtUSSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzI6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hZG1pbl9ob21lIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1730148388),
 ('Q6PlkyQnRHjLimXxhHkVlxCzJJfmLskLsLHkqRxZ', NULL, '127.0.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0.1 Safari/605.1.15', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiM2NLSHVnTW9Hb1BDSUdldzUwRm12NlNaVHVCc0RudFdNYkJDZEtxUCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzU6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9wcm9wZXJ0eS1ncmlkIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1730144611);
 
 -- --------------------------------------------------------
@@ -143,13 +137,6 @@ CREATE TABLE `works` (
   `label` varchar(255) NOT NULL,
   `photo_urls` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL CHECK (json_valid(`photo_urls`))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Tablo döküm verisi `works`
---
-
-INSERT INTO `works` (`id`, `admin_id`, `text`, `label`, `photo_urls`) VALUES
-(20, 1, '11', '1', '[\"uploads\\/DFiU6DqpSAkyHbDvufo8imrm4kQ4YhBnLaPyj9JX.jpg\"]');
 
 --
 -- Dökümü yapılmış tablolar için indeksler
@@ -227,7 +214,7 @@ ALTER TABLE `migrations`
 -- Tablo için AUTO_INCREMENT değeri `works`
 --
 ALTER TABLE `works`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- Dökümü yapılmış tablolar için kısıtlamalar
